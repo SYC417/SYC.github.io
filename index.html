@@ -1,340 +1,417 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
+
 <head>
-<title>Hexo</title>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="SYCblog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/SYC.github.io/">
+    <link rel="dns-prefetch" href="https://SYC417.github.io/SYC.github.io">
+    <!--SEO-->
 
-<!-- meta -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- css -->
-<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-
-<link rel="stylesheet" href="/SYC.github.io/css/bootstrap.min.css">
-<link rel="stylesheet" href="/SYC.github.io/css/custom.css">
-<link rel="stylesheet" href="/SYC.github.io/css/pace.css">
-
-
-<!-- js -->
-
-
-<script src="/SYC.github.io/js/bootstrap.min.js"></script>
-<script src="/SYC.github.io/js/jquery-2.1.3.min.js"></script>
-<script src="/SYC.github.io/js/modernizr.custom.js"></script>
-<script src="/SYC.github.io/js/pace.min.js"></script>
-<script src="/SYC.github.io/js/script.js"></script>
+<meta name="keywords" content="" />
 
 
+<meta name="description" content="" />
 
-<link rel="shortcut icon" href="/SYC.github.io/favicon.ico">
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    SYCblog
+</title>
+
+<link rel="alternate" href="/atom.xml" title="SYCblog" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/SYC.github.io/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/SYC.github.io/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/SYC.github.io/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
 
 <meta name="generator" content="Hexo 5.1.1"></head>
-
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
 <body>
-<div class="container">
-    <header id="site-header">
-        <div class="row">
-            <div class="col-md-4 col-sm-5 col-xs-8">
-                <div class="logo">
-                    <h1><a href="/SYC.github.io/"><b>SYC blog</b></a></h1>
-                </div>
-            </div><!-- col-md-4 -->
-            <div class="col-md-8 col-sm-7 col-xs-4">
-                <nav class="main-nav" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" id="trigger-overlay" class="navbar-toggle">
-                            <span class="ion-navicon"></span>
-                        </button>
-                    </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="cl-effect-11"><a href="/SYC.github.io/" data-hover="Home">Home</a></li>
-                        <li class="cl-effect-11"><a href="/SYC.github.io/about" data-hover="About">About</a></li>
-                        <li class="cl-effect-11"><a href="/SYC.github.io/contact" data-hover="Contact">Contact</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-                </nav>
-                
-                <!-- search box -->
-                <!-- <div id="header-search-box">
-                    <a id="search-menu" href="#"><span id="search-icon" class="ion-ios-search-strong"></span></a>
-                    <div id="search-form" class="search-form">
-                        <form role="search" method="get" id="searchform" action="#">
-                            <input type="search" placeholder="搜索" required>
-                            <button type="submit"><span class="ion-ios-search-strong"></span></button>
-                        </form>
-                    </div>
-                </div> -->
-
-            </div><!-- col-md-8 -->
+    <header class="main-header"  style="background-image:url(
+    http://snippet.shenliyang.com/img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='John Doe'>
+            <img src="/SYC.github.io/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <img src="/SYC.github.io/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
         </div>
-    </header>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="https://SYC417.github.io/SYC.github.io">
+                        SYCblog</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                Home</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/前端/"><i class="fa "></i>
+                                前端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/后端/"><i class="fa "></i>
+                                后端</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/工具/"><i class="fa "></i>
+                                工具</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content ">
+                    
+<div class="carousel">
+    <a href="https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2" target="_blank">
+        <img src="/SYC.github.io/./img/head-img.jpg" alt="">
+    </a>
 </div>
 
 
-<div class="content-body">
-    <div class="container">
-        <div class="row">
-            <main class="col-md-8">
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/SYC.github.io/2020/09/12/My-first-post/">
+                    SYC</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年09月12日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            
+qq邮箱[链接](https://mail.qq.com/cgi-bin/frame_html)
+![Alt text](https://www.baidu.com/link?url=-YsH51sU4Qm0sFCzIHyG6A2i...
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/SYC.github.io/2020/09/12/My-first-post/" class="btn btn-default">
+                Read</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+<article class="post">
+    
+    <div class="post-content">
+        <div class="post-head home-post-head">
+            <h1 class="post-title">
+                <a href="/SYC.github.io/2020/09/12/hello-world/">
+                    Hello World</a>
+            </h1>
+            <div class="post-meta"> &bull;
+                <time class="post-date" datetime="" title="">
+                    2020年09月12日
+                </time>
+            </div>
+        </div>
+        <p class="brief">
+            
+            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+            
+        </p>
+    </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/SYC.github.io/2020/09/12/hello-world/" class="btn btn-default">
+                Read</a>
+        </div>
+    </footer>
+    
+</article>
+
+
+
+                </main>
                 
-<!-- 
-
-  <div id="recent-posts">
-    <h1>Recent Posts</h1>
+                    
+<aside class="col-md-4 sidebar">
     
-      <div class="recent-post-item">
-        <a href="/SYC.github.io/2020/09/12/My-first-post/">SYC</a>
-        
-          <time datetime="2020-09-12T12:19:45.000Z">
-            2020-09-12
-          </time>
-        
-      </div>
     
-      <div class="recent-post-item">
-        <a href="/SYC.github.io/2020/09/12/hello-world/">Hello World</a>
-        
-          <time datetime="2020-09-12T11:30:22.749Z">
-            2020-09-12
-          </time>
-        
-      </div>
-    
-  </div>
-
-
-<span class="page-number current">1</span> -->
-
-    <article class="posts">
-        <header class="entry-header">
-            <h1 class="entry-title">
-                <a href="/SYC.github.io/2020/09/12/My-first-post/">SYC</a>
-            </h1>
-            <div class="entry-meta">
-                <!-- <span class="post-category"><a href="#">[object Object]</a></span> -->
-                <span class="post-date"><a href="#"><time class="entry-date">2020-09-14</time></a></span>
-                <span class="post-author"><a href="#">John Doe</a></span>
-            </div>
-
-        </header>
-        <div class="entry-content clearfix">
+<div class="widget">
+    <h3 class="title">
+        Search
+    </h3>
+    <div id="search-form">
+        <div id="result-mask" class="hide"></div>
+        <div class="search-area">
             
-            <div class="read-more cl-effect-14">
-                <a href="2020/09/12/My-first-post/" class="more-link">More <span class="meta-nav">→</span></a>
-            </div>
-        </div>
-    </article>
-
-    <article class="posts">
-        <header class="entry-header">
-            <h1 class="entry-title">
-                <a href="/SYC.github.io/2020/09/12/hello-world/">Hello World</a>
-            </h1>
-            <div class="entry-meta">
-                <!-- <span class="post-category"><a href="#">[object Object]</a></span> -->
-                <span class="post-date"><a href="#"><time class="entry-date">2020-09-14</time></a></span>
-                <span class="post-author"><a href="#">John Doe</a></span>
-            </div>
-
-        </header>
-        <div class="entry-content clearfix">
+            <input id="search-key" type="search" autocomplete="off" placeholder="Search What？">
+            <button type="button" class="search-form-submit" id="search-local">
+                localSearch</button>
             
-            <div class="read-more cl-effect-14">
-                <a href="2020/09/12/hello-world/" class="more-link">More <span class="meta-nav">→</span></a>
-            </div>
+            
         </div>
-    </article>
-
-
-<nav class="page-nav">
-  <span class="page-number current">1</span>
-</nav>
-
-
-            </main>
-            <aside class="col-md-4">
-
-    <div class="widget widget-archives">
-        <h3 class="widget-title">Archives</h3>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/SYC.github.io/archives/2020/09/">2020 September</a></li></ul>
+        <div id="result-wrap" class="hide">
+            <div id="search-result"></div>
+        </div>
+        <div class="hide">
+            <template id="search-tpl">
+                <div class="item">
+                    <a href="/{path}" title="{title}">
+                        <div class="title">{title}</div>
+                        <div class="content">{content}</div>
+                    </a>
+                </div>
+            </template>
+        </div>
     </div>
+</div>
 
-    <div class="widget widget-category">
-        <h3 class="widget-title">Category</h3>
+    
+    
+<div class="widget">
+    <h3 class="title">
+        Notification
+    </h3>
+    <div class="notification">
+        <p>
+    主题下载：<a href="https://github.com/shenliyang/hexo-theme-snippet" title="fork me" target="_blank">Snippet主题</a> <br/>
+    主题使用：<a href="https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md#常见问题" title="" target="_blank">常见使用问题</a> <br/>
+    支持主题：<a target="_blank" rel="noopener" href="https://github.com/shenliyang/hexo-theme-snippet/stargazers">Star一下</a>
+</p>
+    </div>
+</div>
+
+    
+    
+<div class="widget">
+    <h3 class="title">
+        Social
+    </h3>
+    <div class="content social">
+        
+        <a href="//github.com/shenliyang" rel="external nofollow" title="Github" target="_blank">
+            <i class="git fa fa-git"></i>
+        </a>
+        
+        <a href="mailto:snippet@91h5.cc" rel="external nofollow" title="邮箱" target="_blank">
+            <i class="envelope-o fa fa-envelope-o"></i>
+        </a>
+        
+        <a href="/176" rel="external nofollow" title="联系QQ" target="_blank">
+            <i class="qq fa fa-qq"></i>
+        </a>
+        
+        <a href="/" rel="external nofollow" title="微信" target="_blank">
+            <i class="weixin fa fa-weixin"></i>
+        </a>
+        
+        <a href="/" rel="external nofollow" title="QQ群" target="_blank">
+            <i class="users fa fa-users"></i>
+        </a>
+        
+        <a href="/atom.xml" rel="external nofollow" title="RSS" target="_blank">
+            <i class="feed fa fa-feed"></i>
+        </a>
         
     </div>
+</div>
 
-    <div class="widget widget-tag-cloud">
-        <h3 class="widget-title">Tags</h3>
+    
+    
+    
+    
+<div class="widget">
+    <h3 class="title">
+        Archives
+    </h3>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/SYC.github.io/archives/2020/09/"><i class="fa" aria-hidden="true">2020年09月</i></a><span class="archive-list-count">2</span></li></ul>
+</div>
+
+    
+    
+    
+    
+<div class="widget">
+    <h3 class="title">
+        Friends
+    </h3>
+    <div class="content friends-link">
+        
+        <a href="https://hexo.io/zh-cn/" class="fa" target="_blank">
+            Hexo官网</a>
         
     </div>
+</div>
 
-    <!-- <div class="rss">
-        <a href=""><span class="ion-social-rss-outline"></span> RSS 订阅</a>
-    </div> -->
+    
 </aside>
 
+                
+            </div>
         </div>
-    </div>
-</div>
-
-<footer id="site-footer">
+    </section>
+    <footer class="main-footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <p class="copyright">Hexo</p>
-            </div>
         </div>
     </div>
 </footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a> 
 
-<!-- Mobile Menu -->
-<div class="overlay overlay-hugeinc">
-    <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
-    <nav>
-        <ul>
-            <li><a href="/SYC.github.io/">首页</a></li>
-            <li><a href="/SYC.github.io/about">关于</a></li>
-            <li><a href="/SYC.github.io/contact">联系</a></li>
-        </ul>
-    </nav>
+<script type="text/javascript" src="/love.js"></script>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2017
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
 </div>
 
 
+<script src="/SYC.github.io/js/search.js?rev=@@hash.js"></script>
 
-<script src="/SYC.github.io/js/script.js">(function(window,document,undefined){
 
-			var hearts = [];
 
-			window.requestAnimationFrame = (function(){
 
-				return window.requestAnimationFrame ||
 
-				window.webkitRequestAnimationFrame ||
-
-				window.mozRequestAnimationFrame ||
-
-				window.oRequestAnimationFrame ||
-
-				window.msRequestAnimationFrame ||
-
-				function (callback){
-
-					setTimeout(callback,1000/60);
-
-				}
-
-			})();
-
-			init();
-
-			function init(){
-
-				css(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
-
-				attachEvent();
-
-				gameloop();
-
-			}
-
-			function gameloop(){
-
-				for(var i=0;i<hearts.length;i++){
-
-					if(hearts[i].alpha <=0){
-
-						document.body.removeChild(hearts[i].el);
-
-						hearts.splice(i,1);
-
-						continue;
-
-					}
-
-					hearts[i].y--;
-
-					hearts[i].scale += 0.004;
-
-					hearts[i].alpha -= 0.013;
-
-					hearts[i].el.style.cssText = "left:"+hearts[i].x+"px;top:"+hearts[i].y+"px;opacity:"+hearts[i].alpha+";transform:scale("+hearts[i].scale+","+hearts[i].scale+") rotate(45deg);background:"+hearts[i].color;
-
-				}
-
-				requestAnimationFrame(gameloop);
-
-			}
-
-			function attachEvent(){
-
-				var old = typeof window.onclick==="function" && window.onclick;
-
-				window.onclick = function(event){
-
-					old && old();
-
-					createHeart(event);
-
-				}
-
-			}
-
-			function createHeart(event){
-
-				var d = document.createElement("div");
-
-				d.className = "heart";
-
-				hearts.push({
-
-					el : d,
-
-					x : event.clientX - 5,
-
-					y : event.clientY - 5,
-
-					scale : 1,
-
-					alpha : 1,
-
-					color : randomColor()
-
-				});
-
-				document.body.appendChild(d);
-
-			}
-
-			function css(css){
-
-				var style = document.createElement("style");
-
-				style.type="text/css";
-
-				try{
-
-					style.appendChild(document.createTextNode(css));
-
-				}catch(ex){
-
-					style.styleSheet.cssText = css;
-
-				}
-
-				document.getElementsByTagName('head')[0].appendChild(style);
-
-			}
-
-			function randomColor(){
-
-				return "rgb("+(~~(Math.random()*255))+","+(~~(Math.random()*255))+","+(~~(Math.random()*255))+")";
-
-			}
-
-		})(window,document);</script>
-
+<script src="/SYC.github.io/js/app.js?rev=@@hash.js"></script>
 
 </body>
+
 </html>
